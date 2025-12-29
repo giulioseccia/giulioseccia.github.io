@@ -167,13 +167,19 @@ footer {
     </section>
   </main>
 
-   <footer>
-    <p>Last update: <span id="lastModified"></span></p>
-  </footer>
+<footer>
+  <p>Last update: <span id="lastModified"></span></p>
+</footer>
+
 
   <script>
     document.getElementById("lastModified").textContent = document.lastModified;
   </script>
+<script>
+  var d = new Date(document.lastModified);
+  document.getElementById("lastModified").textContent =
+    d.toLocaleDateString("en-GB");
+</script>
 
 </body>
 </html>
