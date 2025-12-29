@@ -93,13 +93,22 @@ footer {
      main > .section:first-of-type {
        margin-top: 0;
     }
-    .section {
-      margin-top: 20px;
-    }
     
-    .section h3 {
-  margin-top: 0;
+    /* Sections: no margin by default */
+.section {
+  margin: 0;
 }
+
+/* Space ONLY between sections, never before the first one */
+.section + .section {
+  margin-top: 20px;
+}
+
+/* Section headings: controlled spacing */
+.section h3 {
+  margin: 0 0 0.4em 0;
+}
+    
  
     /* Header-specific typography (ADD THIS) */
 header h2 {
