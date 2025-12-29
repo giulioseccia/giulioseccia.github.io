@@ -160,9 +160,13 @@
     </section>
   </main>
 
-  <footer>
-    <p>Last update: </p>
+   <footer>
+    <p>Last update: <span id="lastModified"></span></p>
   </footer>
+
+  <script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
 
 </body>
 </html>
