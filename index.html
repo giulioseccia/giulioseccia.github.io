@@ -97,9 +97,7 @@ footer {
     .section h3 {
   margin-top: 0;
 }
-    .intro + .section {
-  margin-top: 10px;
-}
+ 
     /* Header-specific typography (ADD THIS) */
 header h2 {
   font-weight: normal;
@@ -115,21 +113,14 @@ header p {
   color: #666;
   max-width: 720px;
 }
-     /* Intro (contact + photo) spacing fix */
-  .intro {
-    margin-bottom: 5px;
-  }
-  .intro p {
-  margin: 0;
+    intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-bottom: 0;
+  padding-bottom: 1px; /* prevents margin collapsing */
 }
- /* Reduce space before Appointments ONLY */
-.intro + .section {
-  margin-top: 5px !important;
-}
-
-.intro + .section p:first-child {
-  margin-top: 0;
-}
+ 
    
   </style>
 </head>
@@ -157,7 +148,7 @@ header p {
   </nav>
 
   <main>
-<section class="intro" style="display: flex; align-items: flex-start; gap: 0px;">
+<section class="intro">
   <div style="flex: 1;">
   <p>
       Department of Economics<br>
