@@ -201,12 +201,9 @@ header p {
   </main>
 
 <footer>
-  <p style="text-align: right;">Last update: June 16, 2025</p>
+  <p id="lastModified" style="text-align: right;"></p>
 </footer>
 
-  <script>
-    document.getElementById("lastModified").textContent = document.lastModified;
-  </script>
 <script>
   var d = new Date(document.lastModified);
   document.getElementById("lastModified").textContent =
