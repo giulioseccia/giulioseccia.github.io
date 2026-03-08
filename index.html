@@ -58,24 +58,25 @@ footer {
     }
 
     nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 
-    nav li {
-      display: inline;
-      margin-right: 10px;
-    }
-
-    nav a {
-      background: #E8EBF0;
-      border: 1px solid #ccc;
-      padding: 4px 10px;
-      text-decoration: none;
-      color: #666;
-    }
-
+  nav li {
+  display: block;
+}
+nav a {
+  background: #E8EBF0;
+  border: 1px solid #ccc;
+  padding: 4px 10px;
+  text-decoration: none;
+  color: #666;
+  display: inline-block;
+}
     nav a:hover, nav a.active {
       background: #fff;
       color: #000;
